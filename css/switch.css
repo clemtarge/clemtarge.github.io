@@ -12,7 +12,7 @@
     transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
     transform-style: preserve-3d;
     height: 43px;
-    margin-left: 18%;
+    margin-left: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@
 .toggle>label {
     width: 30px;
     padding: 2px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
     font-size: var(--font-size);
     text-align: center;
     color: var(--accent);
