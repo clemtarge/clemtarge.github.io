@@ -15,6 +15,7 @@
     <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
     <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
     <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/switch.css" rel="stylesheet">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -29,16 +30,24 @@
       <div class="container text-center text-lg-left">
         <div class="pt-4 clearfix">
           <h1 class="site-title mb-0">Clément Targe</h1>
-          <!-- ##### copier le form -->
+
+          <form class="toggle">
+            <input type="radio" id="choice1" name="choice" value="fr">
+            <label for="choice1">EN</label>
+            <input type="radio" id="choice2" name="choice" value="en">
+            <label for="choice2">FR</label>
+            <div id="flap"><span class="content"></span></div>
+        </form>
+
           <div class="site-nav"> 
             <nav role="navigation">
               <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">A propos</span></a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Compétences</span></a></li> -->
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Expériences</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Formation</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Projets</span></a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title">Références</span></a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title"><span lang="fr">A propos</span><span lang="en">About me</span></span></a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title"><span lang="fr">Compétences</span><span lang="en">Skills</span></span></a></li> -->
+                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title"><span lang="fr">Expériences</span><span lang="en">Professional experiences</span></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title"><span lang="fr">Formation</span><span lang="en">Education</span></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title"><span lang="fr">Projets</span><span lang="en">Projects</span></span></a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title"><span lang="fr">Références</span><span lang="en">References</span></span></a></li> -->
                 <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a></li>
               </ul>
             </nav>
@@ -58,7 +67,7 @@
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
                 <h2 class="h1">Clément Targe</h2>
-                <p>Apprenti en Intelligence Artificielle</p>
+                <p><span lang="fr">Apprenti en Intelligence Artificielle</span><span lang="en">Apprentice in Artificial Intelligence</span></p>
               </div>
               <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
                 <nav role="navigation">
@@ -71,7 +80,7 @@
                 </nav>
               </div>
               <div class="d-print-none">
-                <a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="cv_fr.pdf" data-aos="fade-right" data-aos-delay="700">Mon CV</a>
+                <a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="cv_fr.pdf" data-aos="fade-right" data-aos-delay="700"><span lang="fr">Mon CV</span><span lang="en">Mon CV</span></a>
                 <!-- <a class="btn btn-info btn-lg shadow-sm mt-1" href="cv_fr.pdf" data-aos="fade-right" data-aos-delay="700">Mon CV</a> -->
                 <a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700">Contact</a></div>
             </div>
@@ -84,18 +93,20 @@
     <div class="about-section">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="h2 fw-light mb-4">A propos de moi</h2>
-          <p>Bonjour, je suis Clément Targe et je travaille à TotalEnergies en tant qu'alternant en Intelligence Artificielle. Ma formation en Modélisation et Intelligence Artificielle (<strong>ModIA</strong>) à l'ENSEEIHT et à l'INSA Toulouse ainsi que mon contrat se terminent en Février 2023. Je serai intéressé ensuite par un <strong>PhD</strong> en Machine Learning.</p>
-          <p>Je suis passionné de basket et j'aime regarder des séries, jouer aux jeux vidéos, écouter de la musique et faire des Legos.</p>
+          <h2 class="h2 fw-light mb-4"><span lang="fr">A propos de moi</span><span lang="en">About me</span></h2>
+          <p><span lang="fr">Bonjour, je suis Clément Targe et je travaille à TotalEnergies en tant qu'alternant en Intelligence Artificielle. Ma formation en Modélisation et Intelligence Artificielle (<strong>ModIA</strong>) à l'ENSEEIHT et à l'INSA Toulouse ainsi que mon contrat se terminent en Février 2023. Je serai intéressé ensuite par un <strong>PhD</strong> en Machine Learning.</span></p>
+          <p><span lang="en">Hi, I am Clément Targe and I work at TotalEnergies as apprentice in Artifical Intelligence. My formation in Mathematical modelling and Artificial Intelligence (<strong>ModIA</strong>) at ENSEEIHT and INSA Toulouse as well as my contract will end in February 2023. Then, I will be interested in a <strong>PhD</strong> in Machine Learning.</span></p>
+          <p><span lang="fr">Je suis passionné de basket et j'aime regarder des séries, jouer aux jeux vidéos, écouter de la musique et faire des Legos.</span></p>
+          <p><span lang="en">I am passionate about basketball and I enjoy watching series, playing video games, listening to music and making Legos.</span></p>
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
             <h2 class="h2 fw-light mb-4">Bio</h2>
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Naissance</div>
+              <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i><span lang="fr"> Naissance</span><span lang="en"> Birth</span></div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">06/06/1998</div>
+              <div class="pb-2"><span lang="fr">06/06/1998</span><span lang="en">1998/06/06</span></div>
             </div>
             <div class="col-sm-5">
               <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
@@ -112,10 +123,10 @@
             </div> -->
 
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Téléphone</div>
+              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i><span lang="fr"> Téléphone</span><span lang="en"> Phone</span></div>
             </div>
             <div class="col-sm-7">
-              <div class="pb-2">06 74 52 72 12</div>
+              <div class="pb-2"><span lang="fr">06 74 52 72 12</span><span lang="en">+33 6 74 52 72 12</span></div>
             </div>
 
             <!-- <div class="col-sm-5">
@@ -185,36 +196,36 @@
 
   <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
     <div class="work-experience-section">
-      <h2 class="h2 fw-light mb-4">Expériences professionnelles</h2>
+      <h2 class="h2 fw-light mb-4"><span lang="fr">Expériences professionnelles</span><span lang="en">Professional experiences</span></h2>
       <div class="timeline">
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3"><div class="h5">Stagiaire en Intelligence Artificielle <span class="text-muted h6">au SCAI</span></div></div>
+          <div class="timeline-head px-4 pt-3"><div class="h5"><span lang="fr">Stagiaire en Intelligence Artificielle </span><span lang="en">Intern in Artifical Intelligence </span><span class="text-muted h6"><span lang="fr">au SCAI</span><span lang="en">at SCAI</span></span></div></div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">Septembre, 2022 - Novembre, 2022 --- Abu Dhabi</div>
-            <div>Génération de données de sismiques</div>
+            <div class="text-muted text-small mb-3"><span lang="fr">Sept, 2022 - Nov, 2022 --- Abu Dhabi</span><span lang="en">Sept, 2022 - Nov, 2022 --- Abu Dhabi</span></div>
+            <div><span lang="fr">Génération de données de sismiques</span><span lang="en">Seismic data generation</span></div>
             <ul>
-              <li>Utilisation de GANs 3D conditionnels</li>
+              <li><span lang="fr">Utilisation de GANs 3D conditionnels</span><span lang="en">Use of conditional 3D GAN</span></li>
             </ul>
           </div>
         </div>
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3"><div class="h5">Apprenti en Intelligence Artificielle <span class="text-muted h6">à TotalEnergies</span></div></div>
+          <div class="timeline-head px-4 pt-3"><div class="h5"><span lang="fr">Apprenti en Intelligence Artificielle </span><span lang="en">Apprentice in Artificial Intelligence </span><span class="text-muted h6"><span lang="fr">à TotalEnergies</span><span lang="en">at TotalEnergies</span></span></div></div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">Septembre, 2020 - Février, 2023 --- Pau</div>
-            <div>Prédiction de production de biogaz</div>
+            <div class="text-muted text-small mb-3"><span lang="fr">Sept, 2020 - Fév, 2023 --- Pau</span><span lang="en">Sept, 2020 - Feb, 2023 --- Pau</span></div>
+            <div><span lang="fr">Prédiction de production de biogaz</span><span lang="en">Prediction of biogas production</span></div>
             <ul>
-              <li>Prédictions de séries temporelles.</li>
-              <li>Création d'une interface web à disposition de l'utilisateur final pour qu'il anticipe sa production.</li>
+              <li><span lang="fr">Prédictions de séries temporelles.</span><span lang="en">Predictions of time series.</span></li>
+              <li><span lang="fr">Création d'une interface web à disposition de l'utilisateur final pour qu'il anticipe sa production.</span><span lang="en">Implementation of a web interface to allow user to anticipate his production.</span></li>
             </ul>
-            <div>Automatisation de mesures à partir d'images</div>
+            <div><span lang="fr">Automatisation de mesures à partir d'images</span><span lang="en">Automation of measures from images</span></div>
             <ul>
-              <li>Utilisation de réseaux de neurones pour la segmentation/détection d'objets.</li>
+              <li><span lang="fr">Utilisation de réseaux de neurones pour la segmentation/détection d'objets.</span><span lang="en">Use of neural networks for image segmentation / object detection.</span></li>
             </ul>
-            <div>Prédiction de propriétés géophysiques</div>
+            <div><span lang="fr">Prédiction de propriétés géophysiques</span><span lang="en">Prediction of geophysical properties</span></div>
             <ul>
-              <li>Prédiction de données tabulaires avec du Machine Learning.</li>
-              <li>Création d'une interface web à disposition des géologues/géophysiciens.</li>
-              <li>Utilisation du calcul parallèle pour accélérer les inférences.</li>
+              <li><span lang="fr">Prédiction de données tabulaires avec du Machine Learning.</span><span lang="en">Prediction of tabular data with Machine Learning.</span></li>
+              <li><span lang="fr">Création d'une interface web à disposition des géologues/géophysiciens.</span><span lang="en">Implementation of a web interface for geoscientists.</span></li>
+              <li><span lang="fr">Utilisation du calcul parallèle pour accélérer les inférences.</span><span lang="en">Use of parallel computing to speed up inferences.</span></li>
             </ul>
           </div>
         </div>
@@ -232,54 +243,54 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5" id="education">
     <div class="education-section">
-      <h2 class="h2 fw-light mb-4">Formation</h2>
+      <h2 class="h2 fw-light mb-4"><span lang="fr">Formation</span><span lang="en">Education</span></h2>
       <div class="timeline">
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Diplôme d'Ingénieur en Informatique et Télécommunications <span class="text-muted h6">à l'ENSEEIHT</span>          </div>
+            <div class="h5"><span lang="fr">Diplôme d'Ingénieur en Informatique et Télécommunications </span><span lang="en">Engineer degree in IT and Telecommunication </span><span class="text-muted h6"><span lang="fr">à l'ENSEEIHT</span><span lang="en">at ENSEEIHT</span></span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2019 - 2023 --- Toulouse</div>
             <ul>
               <li>Deep Learning</li>
               <li>HPSC</li>
-              <li>Apprentissage sous contraintes physiques</li>
-              <li>Traitement du signal</li>
-              <li>Infrastructure pour le cloud et le big data</li>
-              <li>Théorie des graphes</li>
+              <li><span lang="fr">Apprentissage sous contraintes physiques</span><span lang="en">Learning under physical contraints</span></li>
+              <li><span lang="fr">Traitement du signal</span><span lang="en">Signal processing</span></li>
+              <li><span lang="fr">Infrastructure pour le cloud et le big data</span><span lang="en">Infrastructure for cloud and big data</span></li>
+              <li><span lang="fr">Théorie des graphes</span><span lang="en">Graph theory</span></li>
               <li>Machine Learning</li>
             </ul>
           </div>
         </div>
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Diplôme d'Ingenieur en Mathématiques Appliquées <span class="text-muted h6">à l'INSA Toulouse</span>          </div>
+            <div class="h5"><span lang="fr">Diplôme d'Ingenieur en Mathématiques Appliquées </span><span lang="en">Engineer degree in Applied Mathematics </span><span class="text-muted h6"><span lang="fr">à l'INSA Toulouse</span><span lang="en">at INSA Toulouse</span></span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2020 - 2023 --- Toulouse</div>
             <ul>
-              <li>Modélisation et éléments finis</li>
-              <li>Assimilation de données</li>
-              <li>Plans d'expériences et méta-modèles</li>
-              <li>Durées de vie et processus de Poisson appliqués à l'actuariat et la fiabilité</li>
-              <li>Modélisation et calcul scientifique</li>
-              <li>Modélisation statistique</li>
-              <li>Optimisation et optimisation stochastique</li>
-              <li>Analyse de données</li>
+              <li><span lang="fr">Modélisation et éléments finis</span><span lang="en">Modelling and finite element method</span></li>
+              <li><span lang="fr">Assimilation de données</span><span lang="en">Data assimilation</span></li>
+              <li><span lang="fr">Plans d'expériences et méta-modèles</span><span lang="en">Design of experiments and surrogate models</span></li>
+              <li><span lang="fr">Durées de vie et processus de Poisson appliqués à l'actuariat et la fiabilité</span><span lang="en">Lifespan and Poisson process applied to actuarial and reliability</span></li>
+              <li><span lang="fr">Modélisation et calcul scientifique</span><span lang="en">Modelling and scientific calculus</span></li>
+              <li><span lang="fr">Modélisation statistique</span><span lang="en">Statistic modelling</span></li>
+              <li><span lang="fr">Optimisation et optimisation stochastique</span><span lang="en">Optimization and stochastic optimization</span></li>
+              <li><span lang="fr">Analyse de données</span><span lang="en">Data analysis</span></li>
             </ul>
           </div>
         </div>
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">CPGE <span class="text-muted h6">au Lycée Louis Barthou</span>          </div>
+            <div class="h5"><span lang="fr">CPGE </span><span lang="en">Preparatory class </span><span class="text-muted h6"><span lang="fr">au Lycée Louis Barthou</span><span lang="en">at Louis Barthou High School</span></span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2016 - 2019 --- Pau</div>
             <!-- <div>User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</div> -->
-            <li>Mathématiques</li>
-            <li>Physique Chimie</li>
-            <li>Sciences de l'Ingénieur</li>
-            <li>Informatique</li>
+            <li><span lang="fr">Mathématiques</span><span lang="en">Mathematics</span></li>
+            <li><span lang="fr">Physique Chimie</span><span lang="en">Physics Chemistry</span></li>
+            <li><span lang="fr">Sciences de l'Ingénieur</span><span lang="en">Engineering science</span></li>
+            <li><span lang="fr">Informatique</span><span lang="en">IT</span></li>
           </div>
         </div>
       </div>
@@ -287,13 +298,13 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
     <div class="portfolio-section">
-      <h2 class="h2 fw-light mb-4">Projets realisés</h2>
+      <h2 class="h2 fw-light mb-4"><span lang="fr">Projets realisés</span><span lang="en">Realised projects</span></h2>
       <div class="row g-0 portfolio-reverse">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
             <p class="text-teal text-small">GANs</p>
-            <h3>Génération de données de sismiques</h3>
-            <p class="text-muted"><i>Projet professionnel</i></p>
+            <h3><span lang="fr">Génération de données de sismiques</span><span lang="en">Seismic data generation</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet professionnel</span><span lang="en">Professional project</span></i></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/0_scai.jpg" width="400" height="300"/></a></div>
@@ -302,18 +313,18 @@
         <div class="col-md-6"><a><img class="img-fluid" src="images/13_biogaz.jpg" width="400" height="300"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Statistiques / Times series / Interface web</p>
-            <h3>Prédiction de production de biogaz</h3>
-            <p class="text-muted"><i>Projet professionnel</i></p>
+            <p class="text-teal text-small"><span lang="fr">Statistiques / Times series / Interface web</span><span lang="en">Statistics / Times series / Web interface</span></p>
+            <h3><span lang="fr">Prédiction de production de biogaz</span><span lang="en">Prediction of biogas production</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet professionnel</span><span lang="en">Professional project</span></i></p>
           </div>
         </div>
       </div>
       <div class="row g-0 portfolio-reverse">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">Deep Learning / Segmentation d'images</p>
-            <h3>Automatisation de mesures à partir d'images</h3>
-            <p class="text-muted"><i>Projet professionnel</i></p>
+            <p class="text-teal text-small"><span lang="fr">Deep Learning / Segmentation d'images</span><span lang="en">Deep Learning / Image segmentation</span></p>
+            <h3><span lang="fr">Automatisation de mesures à partir d'images</span><span lang="en">Automation of measures from images</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet professionnel</span><span lang="en">Professional project</span></i></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/12_mousse.jpg" width="400" height="300"/></a></div>
@@ -322,9 +333,9 @@
         <div class="col-md-6"><a><img class="img-fluid" src="images/0_total.jpeg" width="400" height="300"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Machine Learning / Interface web</p>
-            <h3>Prédiction de propriétés géophysiques</h3>
-            <p class="text-muted"><i>Projet professionnel</i></p>
+            <p class="text-teal text-small"><span lang="fr">Machine Learning / Interface web</span><span lang="en">Machine Learning / Web interface</span></p>
+            <h3><span lang="fr">Prédiction de propriétés géophysiques</span><span lang="en">Prediction of geophysical properties</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet professionnel</span><span lang="en">Professional project</span></i></p>
           </div>
         </div>
       </div>
@@ -333,7 +344,7 @@
           <div class="m-4 mt-md-2 text-end">
             <p class="text-teal text-small">Reinforcement Learning / Machine Learning / Cloud</p>
             <h3>Deep Sea Challenge</h3>
-            <p class="text-muted"><i>Projet universitaire par équipe</i><br>Challenge consistant à utiliser une IA pour faire une course de voile. Création d'un agent qui pilote le voilier et d'un simulateur de voile pour l'entrainer. Utilisation d'un service cloud pour faire tourner l'agent.</p>
+            <p class="text-muted"><i><span lang="fr">Projet universitaire par équipe</i><br>Challenge consistant à utiliser une IA pour faire une course de voile. Création d'un agent qui pilote le voilier et d'un simulateur de voile pour l'entrainer. Utilisation d'un service cloud pour faire tourner l'agent.</span><span lang="en">University team project</i><br>Challenge to build an IA to run a sailing boat race. Creation of an agent to drive the sailboat and of a sailboat simulator to train it. Use of a cloud service to run the agent.</span></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/10_bateau.jpg" width="800" height="500"/></a></div>
@@ -343,8 +354,8 @@
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
             <p class="text-teal text-small">Reinforcement Learning</p>
-            <h3>Bot de trading</h3>
-            <p class="text-muted"><i>Projet personnel</i><br>Création d'un bot pour du trading à l'aide d'agents.</p>
+            <h3><span lang="fr">Bot de trading</span><span lang="en">Trading bot</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet personnel</i><br>Création d'un bot pour du trading à l'aide d'agents.</span><span lang="en">Personal project</i><br>Creation of a trading bot with agents.</span></p>
           </div>
         </div>
       </div>
@@ -352,8 +363,8 @@
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
             <p class="text-teal text-small">Time series / SQL</p>
-            <h3>Prédiction du vainqueur</h3>
-            <p class="text-muted"><i>Projet personnel</i><br>Prédiction du vainqueur des matchs de NBA dans le but de parier dessus.</p>
+            <h3><span lang="fr">Prédiction du vainqueur</span><span lang="en">Prediction of the winner</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet personnel</i><br>Prédiction du vainqueur des matchs de NBA dans le but de parier dessus.</span><span lang="en">Personal project</i><br>Prediction of NBA games winner to bet on him.</span></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/8_nba.jpg" width="800" height="500"/></a></div>
@@ -363,17 +374,17 @@
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
             <p class="text-teal text-small">Deep Learning / NLP / Docker</p>
-            <h3>Système de recommandation de recettes de cuisine</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Recommandation de recettes de cuisine à l'aide de NLP pour analyser le contenu puis pour orienter l'utilisateur. Utilisation de conteneur Docker pour le rendu final.</p>
+            <h3><span lang="fr">Système de recommandation de recettes de cuisine</span><span lang="en">Recommendation system of cooking recipes</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Recommandation de recettes de cuisine à l'aide de NLP pour analyser le contenu puis pour orienter l'utilisateur. Utilisation de conteneur Docker pour le rendu final.</span><span lang="en">Univerity project</i><br>Recommendation of cooking recipes with NLP to analyse the content then to guide the user. Use of Docker container for the final rendering.</span></p>
           </div>
         </div>
       </div>
       <div class="row g-0 portfolio-reverse">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">Deep Learning / Apprentissage auto-supervisé</p>
-            <h3>Classification d'images d'animaux</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Problème de classification d'images par apprentissage auto-supervisé. Utilisation d'auto-encodeurs pour pré-entrainer le réseau de neurones.</p>
+            <p class="text-teal text-small"><span lang="fr">Deep Learning / Apprentissage auto-supervisé</span><span lang="en">Deep Learning / Self-supervised learning</span></p>
+            <h3><span lang="fr">Classification d'images d'animaux</span><span lang="en">Classification of animals images</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Problème de classification d'images par apprentissage auto-supervisé. Utilisation d'auto-encodeurs pour pré-entrainer le réseau de neurones.</span><span lang="en">University project</i><br>Images classification with self-supervised learning. Use of autoencoders to pre-train the neural network.</span></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/6_animal.jpg" width="800" height="500"/></a></div>
@@ -382,18 +393,18 @@
         <div class="col-md-6"><a><img class="img-fluid" src="images/5_molecules.png" width="400" height="300"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Deep Learning / Contraintes physiques</p>
-            <h3>Prédiction de l'énergie moléculaire</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Prédiction de l'énergie d'une molécule en prenant en compte les invariances du problème.</p>
+            <p class="text-teal text-small"><span lang="fr">Deep Learning / Contraintes physiques</span><span lang="en">Deep Learning / Physical contraints</span></p>
+            <h3><span lang="fr">Prédiction de l'énergie moléculaire</span><span lang="en">Prediction of molecular energy</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Prédiction de l'énergie d'une molécule en prenant en compte les invariances du problème.</span><span lang="en">University project</i><br>Prediction of molecular energy regarding problem invariances.</span></p>
           </div>
         </div>
       </div>
       <div class="row g-0 portfolio-reverse">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">Probabilité / Processus de Hawkes</p>
-            <h3>Etude des processus de Hawkes</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Ces processus permettent de modéliser les phénomènes auto-excitants. Application au cas des séismes.</p>
+            <p class="text-teal text-small"><span lang="fr">Probabilité / Processus de Hawkes</span><span lang="en">Probability / Hawkes process</span></p>
+            <h3><span lang="fr">Etude des processus de Hawkes</span><span lang="en">Study of Hawkes process</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Ces processus permettent de modéliser les phénomènes auto-excitants. Application au cas des séismes.</span><span lang="en">University project</i><br>These process allow to model self-exciting phenomenon. Application to the earthquakes case.</span></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/4_hawkes.png" width="800" height="500"/></a></div>
@@ -402,18 +413,18 @@
         <div class="col-md-6"><a><img class="img-fluid" src="images/3_opti.png" width="400" height="300"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Optimisation</p>
-            <h3>Edition d'images</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Edition d'une image pour y ajouter un élément d'une autre image. Résolution d'un problème d'opitimisation (équations de Poisson) pour obtenir le résultat.</p>
+            <p class="text-teal text-small"><span lang="fr">Optimisation</span><span lang="en">Optimization</span></p>
+            <h3><span lang="fr">Edition d'images</span><span lang="en">Images editing</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Edition d'une image pour y ajouter un élément d'une autre image. Résolution d'un problème d'opitimisation (équations de Poisson) pour obtenir le résultat.</span><span lang="en">University project</i><br>Editing of images to add content of another one. Solving of an optimization problem (Poisson equations) to get the result.</span></p>
           </div>
         </div>
       </div>
       <div class="row g-0 portfolio-reverse">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">Analyse de données / Modèles statistiques / Machine Learning</p>
-            <h3>Prédiction de la performance énergétique de bâtiments</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Prédiction à partir de mesures du bâtiment de sa performance énergétique.</p>
+            <p class="text-teal text-small"><span lang="fr">Analyse de données / Modèles statistiques / Machine Learning</span><span lang="en">Data analysis / Statistical models / Machine Learning</span></p>
+            <h3><span lang="fr">Prédiction de la performance énergétique de bâtiments</span><span lang="en">Prediction of energy efficiency of buildings</span></h3>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Prédiction à partir de mesures du bâtiment de sa performance énergétique.</span><span lang="en">University project</i><br>Prediction from buildings measures of its energy efficiency.</span></p>
           </div>
         </div>
         <div class="col-md-6"><a><img class="img-fluid" src="images/2_perf_bat.jpg" width="800" height="500"/></a></div>
@@ -422,9 +433,9 @@
         <div class="col-md-6"><a><img class="img-fluid" src="images/1_eigenfaces.png" width="800" height="500"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Analyse de données / ACP</p>
+            <p class="text-teal text-small"><span lang="fr">Analyse de données / ACP</span><span lang="en">Data analysis / PCA</span></p>
             <h3>Eigenfaces</h3>
-            <p class="text-muted"><i>Projet d'école</i><br>Reconnaissance faciale d'individus dans certaines postures à l'aide de l'ACP.</p>
+            <p class="text-muted"><i><span lang="fr">Projet d'école</i><br>Reconnaissance faciale d'individus dans certaines postures à l'aide de l'ACP.</span><span lang="en">University project</i><br>Facial recognition of persons in certain postures with PCA.</span></p>
             <!-- <a href="#" class="btn btn--ghost">
               <svg class="icon btn__icon-left icon-earth">
                   <use xlink:href="img/SVG/symbol-defs.svg#icon-earth"></use>
@@ -474,23 +485,23 @@
       <div class="row mb-4">
         <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
           <div class="mt-1">
-            <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> 06 74 52 72 12</div>
+            <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i><span lang="fr"> 06 74 52 72 12</span><span lang="en"> +33 6 74 52 72 12</span></div>
             <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> clementtarge@gmail.com</div>
           </div>
           <div class="mt-5 d-print-none"><form action="https://formspree.io/f/xwkzoqzz" method="POST">
             <div class="form-outline mb-4">
               <input type="text" id="name" class="form-control" required/>
-              <label class="form-label" for="name">Nom</label>
+              <label class="form-label" for="name"><span lang="fr">Nom</span><span lang="en">Name</span></label>
             </div>
             <div class="form-outline mb-4">
               <input type="email" id="email" class="form-control" name="email" required/>
-              <label class="form-label" for="email">Adresse mail</label>
+              <label class="form-label" for="email"><span lang="fr">Adresse mail</span><span lang="en">Email address</span></label>
             </div>
             <div class="form-outline mb-4">
               <textarea class="form-control" style="resize: none;" id="message" rows="4" name="message" required></textarea>
-              <label class="form-label" for="message">Message</label>
+              <label class="form-label" for="message"><span lang="fr">Message</span><span lang="en">Message</span></label>
             </div>
-            <button class="btn btn-info btn-block mb-4" type="submit">Envoyer</button>
+            <button class="btn btn-info btn-block mb-4" type="submit"><span lang="fr">Envoyer</span><span lang="en">Sent</span></button>
             </form>
           </div>
         </div>
@@ -523,5 +534,6 @@
     <script src="scripts/mdb.min.js?ver=1.2.1"></script>
     <script src="scripts/aos.js?ver=1.2.1"></script>
     <script src="scripts/main.js?ver=1.2.1"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>
