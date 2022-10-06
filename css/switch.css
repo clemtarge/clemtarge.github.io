@@ -1,5 +1,5 @@
 :root {
-    --accent: #e60b0b; /* #FFFFFF */
+    --accent: #a8a8a86b; /* #FFFFFF */
     --border-width: 2px;
     --border-radius: 55px;
     --font-size: 10px;
@@ -11,8 +11,9 @@
     border-radius: var(--border-radius);
     transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
     transform-style: preserve-3d;
-    height: 43px;
-    margin-left: 12%;
+    height: 30px;
+    margin-left: 0%;
+    margin-top: 0.45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,13 +50,14 @@
 .toggle>#flap {
     font-weight: bold;
     text-transform: capitalize;
+    color: #a7aba6;
 }
 
 .toggle>#flap {
     position: absolute;
     top: calc( 0px - var(--border-width));
     left: 50%;
-    height: 43px;
+    height: 30px;
     width: 32px;
     display: flex;
     justify-content: center;
@@ -70,7 +72,7 @@
 }
 
 .toggle>#flap>.content {
-    color: #189ECE;
+    color: #47494a;
     transition: transform 0s linear .25s;
     transform-style: preserve-3d;
 }
